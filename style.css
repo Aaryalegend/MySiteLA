@@ -6,6 +6,141 @@
     font-family: 'Arial', sans-serif;
 }
 
+.title_web {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.desc_web {
+    font-size: large;
+}
+
+.logo img {
+    height: 40px; /* Adjust height as needed */
+    width: auto;  /* Maintain aspect ratio */
+    display: block; /* Ensure no extra space around image */
+}
+
+/* Ensure the logo is properly aligned */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.home-section, .about-section, .services-section, .contact-section {
+    animation: fadeIn 2s ease-out;
+}
+
+
+.cta-btn, form button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-btn:hover, form button:hover {
+    transform: scale(1.05);
+}
+
+
+.nav-links a {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f39c12;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.card {
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background-color: #e97414;
+    color: #fff;
+}
+
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #333;
+    width: 50%;
+    transition: transform 0.3s ease;
+}
+
+.hamburger-menu.active {
+    display: flex;
+    transform: translateY(0);
+}
+
+.hamburger-menu {
+    transform: translateY(-100%);
+}
+
+form input:focus, form textarea:focus {
+    border-color: #f39c12;
+    box-shadow: 0 0 5px rgba(243, 156, 18, 0.5);
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+.footer {
+    animation: pulse 3s infinite;
+}
+
+
 /* General styles */
 body {
     background-color: #f4f4f4;
@@ -27,6 +162,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: medium;
 }
 
 .nav-links {

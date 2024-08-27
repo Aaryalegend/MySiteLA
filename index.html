@@ -9,7 +9,9 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <div class="logo">MySite</div>
+            <div class="logo">
+                <img src="image.png" alt="MySite Logo">
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -26,9 +28,10 @@
 
     <section id="home" class="home-section">
         <div class="content">
-            <h1>Welcome to MySite</h1>
-            <h4>Your one-stop solution for web development</h4>
-            <button class="cta-btn">Get Started</button>
+            <p class="title_web">Welcome to MySite</p>
+            <p class="desc_web">Welcome to the World of Web Development. Your one-stop solution for web development</p>
+            <button class="cta-btn">
+                <a href="https://www.codehelp.in/course/web-development-bootcamp">Get Started</a></button>
         </div>
     </section>
 
@@ -40,18 +43,42 @@
     <section id="services" class="services-section">
         <h2>Our Services</h2>
         <div class="service-cards">
-            <div class="card">
-                <h3>Web Development</h3>
-                <p>Custom web development services tailored to your needs.</p>
-            </div>
-            <div class="card">
-                <h3>SEO Optimization</h3>
-                <p>Improve your site's ranking and visibility with our SEO services.</p>
-            </div>
-            <div class="card">
-                <h3>UI/UX Design</h3>
-                <p>Creative and user-friendly designs for your websites and apps.</p>
-            </div>
+            <a href="https://web.dev/" class="card" target="_blank">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Web Development</h3>
+                        <p>Custom web development services tailored to your needs.</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Web Development Services</h3>
+                        <p>Visit web.dev for more information on web development best practices.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" class="card" target="_blank">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>SEO Optimization</h3>
+                        <p>Improve your site's ranking and visibility with our SEO services.</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>SEO Optimization Info</h3>
+                        <p>Check out Google's SEO Starter Guide for comprehensive SEO tips.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://flatironschool.com/blog/what-is-ux-ui-design/" class="card" target="_blank">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>UI/UX Design</h3>
+                        <p>Creative and user-friendly designs for your websites and apps.</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>UI/UX Design ideas</h3>
+                        <p>Learn more about UI/UX Design from Flatiron School.</p>
+                    </div>
+                </div>
+            </a>
         </div>
     </section>
 
